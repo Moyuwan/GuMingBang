@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/main_bg"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/HEADER"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/global_top_header" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/HEADER"
+        android:id="@+id/line"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="预测我的自选股"
+            android:textColor="@color/red"
+            android:textSize="20sp" />
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="0.5dp"
+            android:layout_marginTop="5dp"
+            android:background="@color/red" />
+    </LinearLayout>
+
+    <com.farsunset.gmb.component.SuperListView
+        android:id="@+id/matterListtView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:cacheColorHint="#00000000"
+        android:divider="@color/window_bg"
+        android:dividerHeight="3dp"
+        android:layout_below="@id/line"
+        android:fadingEdge="none" >
+    </com.farsunset.gmb.component.SuperListView>
+
+    <fragment
+        android:id="@+id/payProductFragment"
+        android:name="com.farsunset.gmb.fragment.PayProductFragment"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" />
+
+</RelativeLayout>

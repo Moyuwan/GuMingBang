@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/main_bg" 
+    android:orientation="vertical" >
+ 
+        
+    <include android:layout_width="fill_parent" 
+         android:layout_height="wrap_content" 
+         android:id="@+id/HEADER"
+         layout="@layout/global_search_header" />
+    
+   <ListView 
+        android:id="@+id/matterListtView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+		android:cacheColorHint="#00000000"
+		android:divider="@color/window_bg"
+        android:dividerHeight="3dp"
+        android:fadingEdge="none" 
+        android:layout_below="@id/HEADER"
+    />
+     <fragment
+        android:id="@+id/forecasterFragment"
+        android:name="com.farsunset.gmb.fragment.ForecasterFragment"
+        android:layout_width="fill_parent"
+        android:layout_below="@id/HEADER"
+        android:layout_height="fill_parent" />
+   
+</RelativeLayout>

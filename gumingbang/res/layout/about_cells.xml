@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+ 
+ <RelativeLayout   android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+   <LinearLayout 
+       android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/aboutView"
+        android:orientation="vertical"
+        android:padding="10dp"
+       >
+        <TextView
+			            android:id="@+id/noDraftTip"
+			            android:layout_width="wrap_content"
+			            android:layout_height="wrap_content"
+			            android:textColor="@color/red"
+			            android:layout_gravity="center_horizontal"
+			            android:textSize="18sp"
+			            android:text="股民邦和它的团队是什么"
+			      />
+       
+         <TextView
+			            android:id="@+id/noDraftTip"
+			            android:layout_width="wrap_content"
+			            android:layout_height="wrap_content"
+			            android:textColor="@color/black"
+			            android:layout_marginTop="10dp"
+			            android:layout_gravity="center_horizontal"
+			            android:textSize="14sp"
+			            android:text="         我们是曾经是中国证券行业各个产品领域资深专家，曾经抱有天下股民是一家的魅力愿景，刺客我们厌倦了当前证券市场的浮云，响应心中的呼唤为天下股民做一点实实在在的事情，我们尊重专业证券研究机构的辛勤劳动，同时也看到民间大量的股票人才，他们是金子也要有发光舞台"
+			      />
+       
+         
+            <TextView
+			            android:id="@+id/noDraftTip"
+			            android:layout_width="wrap_content"
+			            android:layout_height="wrap_content"
+			            android:textColor="@color/black"
+			            android:layout_marginTop="10dp"
+			            android:layout_gravity="center_horizontal"
+			            android:textSize="14sp"
+			            android:text="         股民邦汇集了大量草根高手与机构从业者，他们的预测最能反映出某支股票的真实趋势走向，您的1元钱的鼓励是对他们最好的支持与评价"
+			      />
+   </LinearLayout>
+   
+    <LinearLayout 
+       android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/rateView"
+        android:orientation="vertical"
+        android:padding="10dp"
+       >
+        <TextView
+			            android:layout_width="wrap_content"
+			            android:layout_height="wrap_content"
+			            android:textColor="@color/red"
+			            android:layout_gravity="center_horizontal"
+			            android:textSize="18sp"
+			            android:text="预测人准确率是如何统计的?"
+			      />
+       
+         <TextView
+			            android:layout_width="wrap_content"
+			            android:layout_height="wrap_content"
+			            android:textColor="@color/black"
+			            android:layout_marginTop="10dp"
+			            android:layout_gravity="center_horizontal"
+			            android:textSize="14sp"
+			            android:text="         根据预测人提交的预测报告中针对具体股票的明日走势判断结果与真实走势进行对比，从而得到准确率."
+			      />
+       
+         
+            <TextView
+			            android:layout_width="wrap_content"
+			            android:layout_height="wrap_content"
+			            android:textColor="@color/black"
+			            android:layout_marginTop="10dp"
+			            android:layout_gravity="center_horizontal"
+			            android:textSize="14sp"
+			            android:text="         预测人【股票达人】，针对【浦发银行】这支股票从2013年1月1日开始预测，到目前为止他针对这支股票共预测100次，其中正确预测68次，则【股票达人】对【浦发银行】的预测准确率为68%。"
+			      />
+   </LinearLayout>
+   
+    
+     <LinearLayout 
+       android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/payTipView"
+        android:orientation="vertical"
+        android:padding="10dp"
+       >
+        <TextView
+			            android:layout_width="wrap_content"
+			            android:layout_height="wrap_content"
+			            android:textColor="@color/red"
+			            android:layout_gravity="center_horizontal"
+			            android:textSize="18sp"
+			            android:text="如何预测支付产品?"
+			      />
+       
+         <TextView
+			            android:layout_width="wrap_content"
+			            android:layout_height="wrap_content"
+			            android:textColor="@color/black"
+			            android:layout_marginTop="10dp"
+			            android:layout_gravity="center_horizontal"
+			            android:textSize="14sp"
+			            android:text="         目前股民邦以支付宝作为第三方支付平台，经常网购的人都知道（非常方便使用银行卡，信用卡，支付宝账号等）."
+			      />
+       
+         
+           
+   </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="UTF-8"?>
+ 
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical" 
+        android:background="@drawable/main_bg"
+        android:layout_width="fill_parent" 
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:layout_height="fill_parent">
+ 
+    
+    <TextView android:layout_width="wrap_content"
+        
+           android:layout_marginTop="10dp"
+           android:text="快速注册"
+           android:textColor="@color/red"
+           android:textSize="24sp"
+           android:layout_gravity="center_horizontal"
+           android:layout_height="wrap_content"/>
+    
+    <View android:layout_width="wrap_content"
+          android:layout_marginTop="5dp"
+          android:layout_height="0.5dp"
+          android:background="@color/red"
+        />
+    
+    
+    <LinearLayout 
+       android:layout_width="fill_parent"
+       android:layout_height="wrap_content"
+        android:orientation="vertical" 
+       >
+       <CheckBox 
+           android:layout_height="wrap_content"
+           android:layout_width="wrap_content"
+           android:hint="普通股民注册"
+           android:id="@+id/checkBoxGuming"
+           android:checked="true"
+           />
+       
+       <TextView 
+           android:layout_height="wrap_content"
+           android:layout_width="wrap_content"
+           android:textSize="12sp"
+           android:textColor="@color/black"
+           android:layout_marginLeft="40dp"
+           android:text="普通用户,预测人每日预测产品的受益人(1元消费的主要群体)"
+           />
+   </LinearLayout>
+   
+     <LinearLayout 
+       android:layout_width="fill_parent"
+       android:layout_height="wrap_content"
+        android:orientation="vertical" 
+       >
+       <CheckBox 
+           android:layout_height="wrap_content"
+           android:layout_width="wrap_content"
+           android:hint="预测人申请"
+           android:id="@+id/checkBoxForecast"
+           />
+       
+       <TextView 
+           android:layout_height="wrap_content"
+           android:layout_width="wrap_content"
+           android:textSize="12sp"
+           android:textColor="@color/black"
+           android:layout_marginLeft="40dp"
+           android:text="专业证券研究机构的研究员或者经验丰富的老股民，可每日提供预测产品。（需要申请资格审核）"
+           />
+   </LinearLayout>
+   
+  <View android:layout_width="wrap_content"
+          android:layout_marginTop="10dp"
+          android:layout_height="0.5dp"
+          android:background="@color/red"
+        />
+  
+  
+   <LinearLayout 
+       android:layout_width="fill_parent"
+       android:layout_height="wrap_content"
+        android:orientation="horizontal" 
+        android:layout_marginTop="10dp"
+       >
+       <TextView 
+           android:layout_height="wrap_content"
+           android:layout_width="wrap_content"
+           android:text="账号  "
+           android:layout_weight="3"
+           android:textColor="@color/black"
+           android:gravity="right"
+           android:ems="4"
+           />
+       
+          
+      <EditText 
+	       android:layout_width="fill_parent"
+           android:layout_height="wrap_content"
+           android:id="@+id/account"
+           android:hint="请输入用户名"
+           android:layout_weight="6"
+	      /> 
+   </LinearLayout>
+   
+
+	      
+ <LinearLayout 
+       android:layout_width="fill_parent"
+       android:layout_height="wrap_content"
+        android:orientation="horizontal" 
+        android:layout_marginTop="10dp"
+       >
+       <TextView 
+           android:layout_height="wrap_content"
+           android:layout_width="wrap_content"
+           android:text="密码  "
+           android:layout_weight="3"
+           android:textColor="@color/black"
+           android:gravity="right"
+           android:ems="4"
+           />
+       
+          
+      <EditText 
+	       android:layout_width="fill_parent"
+           android:layout_height="wrap_content"
+           android:id="@+id/password"
+           android:hint="请输入密码"
+           android:password="true"
+           android:layout_weight="6"
+	      /> 
+   </LinearLayout>
+   
+  <LinearLayout 
+       android:layout_width="fill_parent"
+       android:layout_height="wrap_content"
+        android:orientation="horizontal" 
+        android:layout_marginTop="10dp"
+       >
+       <TextView 
+           android:layout_height="wrap_content"
+           android:layout_width="wrap_content"
+           android:text="手机  "
+           android:layout_weight="3"
+           android:textColor="@color/black"
+           android:gravity="right"
+           android:ems="4"
+           />
+       
+          
+      <EditText 
+	       android:layout_width="fill_parent"
+           android:layout_height="wrap_content"
+           android:id="@+id/phonenumber"
+           android:hint="申请预测人必填"
+           android:phoneNumber="true"
+           android:layout_weight="6"
+	      /> 
+   </LinearLayout>
+   
+  
+	  <Button
+        android:id="@+id/registerButton"
+        android:layout_width="fill_parent"
+        android:layout_height="45dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:text="注 册"
+        style="@style/button_red"
+        android:layout_marginTop="20dp"
+        android:textStyle="bold"
+          />
+</LinearLayout>

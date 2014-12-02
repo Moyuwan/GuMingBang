@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:background="@drawable/main_bg"
+    android:orientation="vertical"
+    android:layout_height="fill_parent" >
+
+    <RelativeLayout
+        android:id="@+id/tab_bar"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp" >
+
+        <Button
+            android:id="@+id/tab_rate"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_centerInParent="true"
+            android:background="@drawable/tab_middle"
+            android:text="预测成功率"
+            android:paddingLeft="12dp"
+            android:paddingRight="12dp"
+            android:textColor="@color/black"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/tab_about_gmb"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@id/tab_rate"
+            android:background="@drawable/tab_left"
+            android:gravity="center"
+            android:paddingLeft="12dp"
+            android:paddingRight="12dp"
+            android:text="关于股民邦"
+            android:textColor="@color/black"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/tab_pay_tip"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/tab_rate"
+            android:background="@drawable/tab_right"
+            android:gravity="center"
+            android:text="支付说明"
+            android:paddingLeft="12dp"
+            android:paddingRight="12dp"
+            android:textColor="@color/black"
+            android:textStyle="bold" />
+    </RelativeLayout>
+    <android.support.v4.view.ViewPager
+        android:id="@+id/view_pager"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginTop="5dp" />
+</LinearLayout>

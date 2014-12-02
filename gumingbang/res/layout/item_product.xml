@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:descendantFocusability="blocksDescendants"
+>
+   <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="160dp"
+        android:layout_weight="4"
+        android:background="@drawable/stock_bg"
+        >
+	     <TextView
+	            android:id="@+id/matter"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:textSize="20sp"
+	            android:textColor="@color/white"
+	            android:textStyle="bold"
+	            android:paddingLeft="5dp"
+	            android:padding="3dp"
+	            android:text="600000"
+	      />
+	      
+	        <TextView
+	            android:id="@+id/name"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_alignParentBottom="true"
+	            android:gravity="center"
+	            android:textSize="24sp"
+	            android:layout_centerHorizontal="true"
+	            android:textColor="@color/navyblue"
+	            android:text="浦发银行"
+	       />
+	         
+       </RelativeLayout>
+      <LinearLayout 
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_weight="6"
+          android:paddingLeft="10dp"
+          android:orientation="vertical"
+          >
+          <LinearLayout 
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:orientation="horizontal"
+          >
+          
+           <TextView
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:textSize="16sp"
+	            android:textColor="@color/black"
+	            android:text="预测人:"
+	       />
+          
+           <TextView
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:gravity="center"
+	            android:textSize="16sp"
+	            android:textColor="@color/pink"
+	            android:text="预测人:"
+	            android:id="@+id/forecaster"
+	       />
+          </LinearLayout>
+          
+          <LinearLayout 
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:orientation="horizontal"
+          android:layout_marginTop="2dp"
+          >
+          
+           <TextView
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:gravity="center"
+	            android:textSize="16sp"
+	            android:textColor="@color/black"
+	            android:text="准确率:"
+	       />
+          
+           <TextView
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:gravity="center"
+	            android:textSize="16sp"
+	            android:textColor="@color/pink"
+	            android:text="87%"
+	            android:id="@+id/gail"
+	       />
+          </LinearLayout>
+          
+           <LinearLayout 
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:orientation="horizontal"
+           android:layout_marginTop="2dp"
+          >
+          
+           <TextView
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:gravity="center"
+	            android:textSize="16sp"
+	            android:textColor="@color/black"
+	            android:text="价    格:"
+	       />
+          
+           <TextView
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:gravity="center"
+	            android:textSize="16sp"
+	            android:textColor="@color/red"
+	            android:text="9年"
+	            android:id="@+id/price"
+	       />
+           
+          
+          </LinearLayout>
+          
+           
+           <LinearLayout 
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+           android:layout_marginTop="2dp"
+          android:orientation="horizontal"
+          >
+          
+           <TextView
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:gravity="center"
+	            android:textSize="16sp"
+	            android:textColor="@color/black"
+	            android:text="当前"
+	       />
+          
+            <TextView
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:gravity="center"
+	            android:textSize="16sp"
+	            android:textColor="@color/pink"
+	            android:id="@+id/payNum"
+	            android:text=""
+	       />
+            
+            <TextView
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:gravity="center"
+	            android:textSize="16sp"
+	            android:textColor="@color/black"
+	            android:text="人购买"
+	       />
+          
+          </LinearLayout>
+          
+             <LinearLayout 
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:orientation="horizontal"
+           android:layout_marginTop="5dp"
+          >
+           <Button
+	            android:layout_width="70dp"
+	            android:layout_height="30dp"
+	            android:padding="5dp"
+	            android:textSize="16sp"
+	            android:id="@+id/button"
+	            style="@style/button_red"
+	            android:focusable="false"
+	            android:clickable="false"
+	       />
+          </LinearLayout>
+         <include layout="@layout/divide"
+             
+             />
+         
+         <TextView android:layout_width="wrap_content"
+             android:text="2013-09-12 12:00:00"
+             android:textColor="@color/black"
+             android:layout_marginTop="5dp"
+             android:textSize="14sp"
+             android:layout_height="wrap_content"/>
+      </LinearLayout>
+</LinearLayout>

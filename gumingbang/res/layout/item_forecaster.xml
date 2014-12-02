@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="200dp"
+        android:padding="5dp"
+        android:background="@color/white"
+        android:orientation="horizontal"
+>
+   <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="4"
+        android:orientation="vertical"
+        >
+	     <com.farsunset.gmb.component.WebImageView
+	            android:id="@+id/headImage"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:paddingLeft="5dp"
+	            android:paddingTop="5dp"
+	            android:src="@drawable/head_default"
+	      />
+	      
+	      <Button
+	            android:layout_width="wrap_content"
+	            android:layout_height="30dp"
+	            android:layout_marginTop="10dp"
+	            android:textSize="16sp"
+	            android:padding="5dp"
+	            android:id="@+id/button"
+	            style="@style/button_red"
+	            android:focusable="false"
+	            android:clickable="false"
+	            android:text="点击查看"
+	       />
+	         
+       </LinearLayout>
+
+      <LinearLayout
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:orientation="vertical"
+          android:layout_weight="6"
+          android:paddingLeft="5dp" >
+
+          <LinearLayout 
+          android:layout_width="fill_parent"
+          android:layout_height="wrap_content"
+          android:orientation="horizontal"
+          android:padding="3dp"
+          >
+          
+           <TextView
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:gravity="center"
+	            android:textSize="16sp"
+	            android:textColor="@color/black"
+	            android:text="预测人:"
+	       />
+          
+           <TextView
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:gravity="center"
+	            android:textSize="16sp"
+	            android:textColor="@color/pink"
+	            android:text="预测人:"
+	            android:id="@+id/name"
+	       />
+           
+           
+           <TextView
+	            android:layout_width="fill_parent"
+	            android:layout_height="wrap_content"
+	            android:gravity="right"
+	            android:textSize="16sp"
+	            android:textColor="@color/pink"
+	            android:text="预测人:"
+	            android:layout_marginRight="5dp"
+	            android:id="@+id/oprtype"
+	       />
+          </LinearLayout>
+          
+          <LinearLayout 
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:orientation="horizontal"
+          android:padding="3dp"
+          >
+          
+           <TextView
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:gravity="center"
+	            android:textSize="16sp"
+	            android:textColor="@color/black"
+	            android:text="准确率:"
+	       />
+          
+           <TextView
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:gravity="center"
+	            android:textSize="16sp"
+	            android:textColor="@color/black"
+	            android:text="87%"
+	            android:id="@+id/gail"
+	       />
+          </LinearLayout>
+          
+           <LinearLayout 
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:orientation="horizontal"
+          android:padding="3dp"
+          >
+          
+           <TextView
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:gravity="center"
+	            android:textSize="16sp"
+	            android:textColor="@color/black"
+	            android:text="股    龄:"
+	       />
+          
+           <TextView
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:gravity="center"
+	            android:textSize="16sp"
+	            android:textColor="@color/pink"
+	            android:text="9年"
+	            android:id="@+id/oprgul"
+	       />
+           
+            <TextView
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:gravity="center_vertical|right"
+	            android:textSize="16sp"
+	            android:layout_marginLeft="10dp"
+	            android:textColor="@color/black"
+	            android:text="粉丝:"
+	       />
+          
+           <TextView
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:gravity="center"
+	            android:textSize="16sp"
+	            android:textColor="@color/black"
+	            android:text="43434"
+	            android:id="@+id/fans"
+	       />
+           
+          </LinearLayout>
+          
+           
+           <LinearLayout 
+          android:layout_width="fill_parent"
+          android:layout_height="wrap_content"
+          android:orientation="horizontal"
+          android:padding="3dp"
+          >
+          
+           <TextView
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:gravity="center"
+	            android:textSize="16sp"
+	            android:textColor="@color/black"
+	            android:text="他    说:"
+	       />
+          
+           <TextView
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:textColor="@color/black"
+	            android:textSize="12sp"
+	            android:text="发发发发发费啊发发发发发额发发发发阿法非法而发费啊发发二分法发疯阿峰发放时挖坟发发发"
+	            android:id="@+id/signature"
+	       />
+          </LinearLayout>
+          
+        <include layout="@layout/divide"/>
+         <LinearLayout 
+          android:layout_width="fill_parent"
+          android:layout_height="wrap_content"
+          android:orientation="horizontal"
+          android:layout_gravity="center_vertical"
+          android:layout_marginTop="5dp"
+          android:padding="3dp"
+          >
+          
+           <TextView
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:gravity="center"
+	            android:textSize="16sp"
+	            android:textColor="@color/black"
+	            android:text="推荐指数:"
+	       />
+          
+           <ImageView
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            
+	            android:src="@drawable/icon_star"
+	       />
+          </LinearLayout>
+      </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/main_bg"
+    android:orientation="vertical" >
+
+    <com.farsunset.gmb.component.SuperListView
+        android:id="@+id/stockListtView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:cacheColorHint="#00000000"
+        android:divider="@color/window_bg"
+        android:dividerHeight="3dp"
+        android:fadingEdge="none" >
+    </com.farsunset.gmb.component.SuperListView>
+
+    <fragment
+        android:id="@+id/payProductFragment"
+        android:name="com.farsunset.gmb.fragment.PayProductFragment"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" />
+
+
+</RelativeLayout>
